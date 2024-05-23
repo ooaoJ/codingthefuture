@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bodyAnimation 2s infinite;
+}
+
+#root {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(126, 75, 155);
+    box-shadow: rgba(0, 0, 0, 0.666) 2px 1px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#title {
+    font-size: 45px;
+}
+
+#left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#contact{
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#contact:hover{
+    background-color: rgb(172, 26, 172);
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+#team-name {
+    background: linear-gradient(to right, rgba(255, 255, 255), rgb(215, 24, 253));
+    background-clip: text;
+    color: transparent;
+}
+
+#right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-background {
+    background: linear-gradient(23deg, purple, rgb(166, 4, 225));
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#image-background img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    width: 100%;
+    height: 10%;
+}
+
+a {
+    font-size: 20px;
+}
+
+i {
+    font-size: 44px;
+}
+
+#links-list {
+    gap: 20px;
+}
+
+#links-list i:hover {
+    color: transparent;
+    background: linear-gradient(23deg, rgb(205, 31, 205), rgb(166, 4, 225));
+    background-clip: text;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+@keyframes bodyAnimation {
+    0% {
+        background-color: rgb(108, 0, 141);
+    }
+
+    50% {
+        background-color: rgb(123, 0, 153);
+    }
+
+    100% {
+        background-color: rgb(108, 0, 141);
+    }
+}
+
+.navbarlist:hover {
+    color: rgb(222, 37, 222);
+    transition: 0.4s;
+}
